@@ -8,11 +8,11 @@ import (
 func initializeRoutes(router *gin.Engine) {
 	v1 := router.Group("/api/v1")
 	{
-		v1.GET("/opening", handler.ShowOppeningHandler)
-		v1.POST("/opening", handler.CreateOppeningHandler)
-		v1.DELETE("/opening", handler.DeleteOppeningHandler)
-		v1.PUT("/opening", handler.UpdateOppeningHandler)
-		v1.GET("/openings", handler.ListOppeningHandler)
+		v1.GET("/opening", handler.ShowOpeningHandler)
+		v1.POST("/opening", handler.CreateOpeningHandler)
+		v1.DELETE("/opening", handler.DeleteOpeningHandler)
+		v1.PUT("/opening", handler.UpdateOpeningHandler)
+		v1.GET("/openings", handler.ListOpeningHandler)
 	}
 
 }
